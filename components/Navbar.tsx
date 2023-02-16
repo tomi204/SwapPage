@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link href="/" className={styles.linkNav}>
-        Home
+        HOME
       </Link>
       <Link href="/about" className={styles.linkNav}>
         NFT
