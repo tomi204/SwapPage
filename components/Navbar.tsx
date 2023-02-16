@@ -11,7 +11,16 @@ const Navbar = () => {
       <Link href="/about" className={styles.linkNav}>
         NFT
       </Link>
-      <ConnectButton showBalance={true} />
+      <ConnectButton
+        showBalance={{
+          smallScreen: false,
+          largeScreen: true,
+        }}
+        accountStatus={{
+          smallScreen: "avatar",
+          largeScreen: "full",
+        }}
+      />
     </nav>
   );
 };

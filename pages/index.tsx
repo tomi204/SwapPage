@@ -22,8 +22,10 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
+
       <main className={styles.main}>
+        <Navbar />
+        <h2 className={styles.title}>Swap your ERC20!</h2>
         <SwapWidget
           width={"50%"}
           theme={darkTheme}
