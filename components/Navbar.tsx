@@ -9,7 +9,7 @@ const Navbar = () => {
         HOME
       </Link>
       <Link href="/about" className={styles.linkNav}>
-        NFT
+        NFT Marketplace
       </Link>
       <ConnectButton
         showBalance={{

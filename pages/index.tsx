@@ -25,11 +25,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Navbar />
-        <h2 className={styles.title}>Swap your ERC20!</h2>
+        <h2 className={styles.title}>Swap your Tokens!</h2>
         <SwapWidget
           width={"50%"}
           theme={darkTheme}
           jsonRpcUrlMap={jsonRpcUrlMap}
+          className={styles.swapWidget}
         />
       </main>
     </div>
