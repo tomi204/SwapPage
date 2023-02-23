@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 pragma abicoder v2;
 import "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 contract Swap is Ownable, ReentrancyGuard {
     ISwapRouter public immutable swapRouter;
-    uint24 public constant poolFee = 3000;
+    uint24 public constant poolFee = 0;
 
     constructor(ISwapRouter _swapRouter) {
         swapRouter = _swapRouter;

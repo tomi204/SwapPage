@@ -12,6 +12,7 @@ const Home: NextPage = () => {
   const jsonRpcUrlMap = {
     1: "https://eth-goerli.g.alchemy.com/v2/3i8jCezRXagBt41owabyHL1nxambxJHr",
   };
+
   return (
     <div className={styles.container}>
       <Head>
