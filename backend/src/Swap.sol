@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.19;
 pragma abicoder v2;
-import "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
-import "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+import "../node_modules/@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol";
+import "../node_modules/@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol";
+import "../node_modules/@openzeppelin/contracts/access/Ownable.sol";
+import "../node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 contract Swap is Ownable, ReentrancyGuard {
     ISwapRouter public immutable swapRouter;
