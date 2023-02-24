@@ -6,12 +6,11 @@ import "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract SwapT is Ownable {
-    ISwapRouter public immutable swapRouter;
+    ISwapRouter public immutable swapRouter =
+        ISwapRouter(0xE592427A0AEce92De3Edee1F18E0157C05861564);
     uint24 public constant poolFee = 3000;
 
-    constructor(ISwapRouter _swapRouter) {
-        swapRouter = _swapRouter;
-    }
+    constructor() {}
 
     function swapExactInput(
         uint256 amountIn,
